@@ -1,6 +1,6 @@
 let express = require('express');
 let bodyParser = require('body-parser');
-let newsdata = null
+let booksdata = null
 
 var app = express();
 app.set('view engine', 'ejs');
@@ -10,7 +10,11 @@ const port = process.env.PORT || 3000;
 
 
 app.get('/', function (request, response) {
-    response.render('main', { newsdata: newsdata });
+    response.render('main');
+});
+
+app.get('/authors', function (request, response) {
+    response.render('authors');
 });
 
 
