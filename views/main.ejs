@@ -14,7 +14,7 @@
 
 
     <title>Open Library</title>
-    <%- include("static/styles.ejs"); %>
+    <%- include("public/static/styles.ejs"); %>
 </head>
 
 <body>
@@ -45,23 +45,19 @@
 
 
     <!-- Bootstrap Search -->
-    <section class="search">
+    <div class="look">
         <div class="container1">
-            <form action="/" method="POST">
-                <div class="card-body row no-gutters align-items-center">
-                    <div class="col">
-                        <input class="form-control form-control-lg form-control-borderless" id="keyword" name="keyword"
-                            type="search" placeholder="What would you like to search?">
-                    </div>
+            <div class="row">
+      <form action="/" method="POST">
+          <div class="input1">
+        <input class="form-control form-control-lg form-control-borderless" type="search" id="keyword" name="keyword" placeholder="What would you like to search?">
+    </div>
+        <button class="btn btn-lg btn-success" formaction="/" type="submit">Search</button>
+    </form>
+</div>
+    </div>
+</div>
 
-                    <div class="col-auto">
-                        <button class="btn btn-lg btn-success" formaction="/" type="submit">Search</button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </section>
 
     <!-- About US section-->
 
