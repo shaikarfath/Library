@@ -16,7 +16,7 @@ app.get('/', function (request, response) {
 
 app.post('/', function(req,res){
     
-    axios.get(`http://openlibrary.org/search.json?title=`)
+    axios.get(`http://openlibrary.org/search.json?title=${req.body.keyword}`)
     .then(function(response){
  
         
