@@ -1,4 +1,6 @@
 <style>
+
+
     .container2 {
         position: center;
         margin-left: 0em;
@@ -52,12 +54,10 @@
     }
 
     .look {
-        background: url("/images/background_main.jpg");
+        background: url("/images/books.jpg");
         opacity: 0.9;
         height: 500px;
     }
-
-    
 
     .input1 {
         margin-top: 15em;
@@ -93,4 +93,5 @@
     .nav-item5 {
         margin-left: 35px;
     }
+
 </style>
