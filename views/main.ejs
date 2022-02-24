@@ -65,22 +65,28 @@
 
     <% if (booksdata !=null) { %>
         <h2>Here are the top 10 books from your request:</h2>
-        <% for(var i=0; i < 10; i++) {%>
+        <% for(var i=0; i < 1; i++) {%>
             <div class="col">
-                <div class="panel ">
-                    <div class="panel-heading">
+                
+                    <div>
                         <center>
-                            <h2>
+                            <div class="title">
                                 <%- booksdata.items[i].volumeInfo.title %>
+                            </div>
+                            <div class="author">
                                 <%- booksdata.items[i].volumeInfo.authors %>
-                                <%- booksdata.items[i].volumeInfo.description %> 
-                                <%- booksdata.items[i].volumeInfo.imageLinks.thumbnail %>
-                                <%- booksdata.items[i].volumeInfo.canonicalVolumeLink %>
-                            </h2>
+                            </div>
+                            <div class="image">
+                                <center><a href="<%- booksdata.items[i].volumeInfo.canonicalVolumeLink %>"><img src="<%- booksdata.items[i].volumeInfo.imageLinks.thumbnail %>" style="width:auto;height:100px;"></a></center>
+                            </div>
+                                <div class="des">
+                                    <%- booksdata.items[i].volumeInfo.description %> 
+                                </div>
+                            
                         </center>
                     </div>
                     
-                </div>
+               
             </div>
             <% } %>
                 <% } %>
