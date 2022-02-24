@@ -64,43 +64,46 @@
     
 
     <% if (booksdata !=null) { %>
-        <h2><center>Here are the top 10 books from your request:</center></h2>
+        <h2>
+            <center>Here are the top 10 books from your request:</center>
+        </h2>
         <br />
-                               
-                                <br />
-                                <br />
-                                <br />
+    
+        <br />
+        <br />
+        <br />
         <% for(var i=0; i < 10; i++) {%>
             <div class="col">
-                
-                    <div>
-                        <center>
-                            <div class="title">
-                                <%- booksdata.items[i].volumeInfo.title %>
-                            </div>
-                                <br />
-                            <div class="author">
-                                <%- booksdata.items[i].volumeInfo.authors %>
-                            </div>
-                                <br />
-                            <div class="image">
-                                <center><a href="<%- booksdata.items[i].volumeInfo.canonicalVolumeLink %>"><img src="<%- booksdata.items[i].volumeInfo.imageLinks.smallThumbnail %>" ></a></center>
-                            </div>
-                                <br />
-                                <br />
-                                <div class="des">
-                                    <%- booksdata.items[i].volumeInfo.description %> 
-                                </div>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                        </center>
-                    </div>
-                    
-               
+    
+                <div>
+                    <center>
+                        <div class="title">
+                            <%- booksdata.items[i].volumeInfo.title %>
+                        </div>
+                        <br />
+                        <div class="author">
+                            <%- booksdata.items[i].volumeInfo.authors %>
+                        </div>
+                        <br />
+                        <div class="image">
+                            <center><a href="<%- booksdata.items[i].volumeInfo.canonicalVolumeLink %>"><img
+                                        src="<%- booksdata.items[i].volumeInfo.imageLinks.smallThumbnail %>"></a></center>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="des">
+                            <%- booksdata.items[i].volumeInfo.description %>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </center>
+                </div>
+    
+    
             </div>
             <% } %>
                 <% } %>
