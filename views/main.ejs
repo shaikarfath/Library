@@ -64,17 +64,18 @@
     
 
     <% if (booksdata !=null) { %>
-        <h2>Here are the top 20 books from your request:</h2>
+        <h2>Here are the top 10 books from your request:</h2>
         <% for(var i=0; i < 10; i++) {%>
-            <div class="col-sm-6">
+            <div class="col">
                 <div class="panel ">
                     <div class="panel-heading">
                         <center>
                             <h2>
-                                <%- booksdata.docs[i].title %>
-                                <!-- <%- booksdata.docs[i].isbn %> -->
-                                <%- booksdata.docs[i].author_name %>
-                                <%- booksdata.docs[i].first_publish_year %>
+                                <%- booksdata.items[i].volumeInfo.title %>
+                                <%- booksdata.items[i].volumeInfo.authors %>
+                                <%- booksdata.items[i].volumeInfo.description %> 
+                                <%- booksdata.items[i].volumeInfo.imageLinks.thumbnail %>
+                                <%- booksdata.items[i].volumeInfo.canonicalVolumeLink %>
                             </h2>
                         </center>
                     </div>
