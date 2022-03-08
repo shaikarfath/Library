@@ -95,7 +95,7 @@
                             <br />
 
 
-                            <p>
+                            <!-- <p>
                                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#booksdata<%= i %> " aria-expanded="false"
                                     aria-controls="booksdata<%= i %>">
@@ -110,17 +110,51 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
-                            <br />
-                            <br />
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#booksdata<%= i %>">
+                                Book Description
+                            </button>
+
+                            <!-- Modal -->
                            
+
+
+                            <br />
+                            <br />
+
                             <br />
                             <br />
                         </center>
                     </div>
 
+                </div>
+            </div>
+            <div class="modal fade" id="booksdata<%= i %>" tabindex="-1" aria-labelledby="#booksdata<%= i %>" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel"><div class="title">
+                                <%- booksdata.items[i].volumeInfo.title %>
+                            </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="des">
+                                <%- booksdata.items[i].volumeInfo.description %>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close</button>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
 
