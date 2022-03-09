@@ -90,17 +90,17 @@
     }
     
     .nav-item2 {
-        margin-left: 35px;
+        margin-left: 8em;
     }
 
     .nav-item3 {
-        margin-left: 35px;
+        margin-left: 8em;
     }
     .nav-item4 {
-        margin-left: 35px;
+        margin-left: 8em;
     }
     .nav-item5 {
-        margin-left: 35px;
+        margin-left: 8em;
     }
 
     .divider
@@ -142,5 +142,10 @@ body {
     margin: 0; 
     background-color: #e6f3f5;
 }
-
+ .card {
+     height: 600px;
+     margin-bottom: 3em ;
+     background-color: #c1e8f0;
+     padding-top: 4em;
+ }
 </style>
