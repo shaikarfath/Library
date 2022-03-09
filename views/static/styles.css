@@ -205,5 +205,8 @@ body {
         .bookdes {
             margin-left: 15.5em;
         }
+        .data h2 {
+            font-size: 15px;
+        }
     }
 </style>
