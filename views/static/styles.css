@@ -153,4 +153,57 @@ body {
     .form-group {
         margin-bottom: 1em;
     }
+
+    @media only screen and (max-width: 700px) {
+        .nav {
+            min-height: 10px;
+            
+        }
+        .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5{
+            font-size: 4px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-link img{
+            height: 30px;
+        }
+        .nav justify-content-center {
+            height: 30px;
+        }
+        .footer {
+            font-size: 10px;
+            margin-left: -40em;
+            padding: 0;
+            position: center;
+        }
+        .footer h5 {
+            font-size: 15px;
+            margin-top: -12px;
+        }
+        .footer li {
+            font-size: 10px;
+        }
+        .form-group {
+            font-size: 10px;
+            size: 20px;
+            margin-top: -10px;
+        }
+        .look {
+            position: relative;
+            align-items: center;
+        }
+        .input1 {
+            align-items: center;
+            margin-left: -21.5em;
+            width: 300px;
+        }
+        .btn {
+            align-items: center;
+            margin-left: -15.5em;
+            
+        }
+        .bookdes {
+            margin-left: 15.5em;
+        }
+    }
 </style>
