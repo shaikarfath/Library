@@ -194,12 +194,13 @@ body {
         }
         .input1 {
             align-items: center;
-            margin-left: -21.5em;
+            margin-left: -22.5em;
             width: 300px;
+            
         }
         .btn {
             align-items: center;
-            margin-left: -15.5em;
+            margin-left: -16.5em;
             
         }
         .bookdes {
@@ -207,6 +208,26 @@ body {
         }
         .data h2 {
             font-size: 15px;
+        }
+        .title{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .author{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        .des{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 10px;
+        }
+        .image img{
+            height: 150px;
+        }
+        .card {
+            width: 250px;
+            height: 450px;
+            margin-left: -3.6em;
         }
     }
 </style>
