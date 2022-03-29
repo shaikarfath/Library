@@ -237,18 +237,26 @@ body {
             height: 450px;
             margin-left: -2em;
         }
+        .form-control1 {
+            width: 180px;
+            font-size: 15px;
+        }
+        .footer li {
+            font-size: 12px;
+        }
         
     }
 
-    @media screen and (max-width: 1180px) and (min-width: 641px) {
+    @media screen and (max-width: 1080px) and (min-width: 641px) {
         .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5{
-            font-size: 12px;
+            font-size: 11px;
             margin-left: 1.5em;
         }
 
         .container2 {
             font-family: 'Times New Roman', Times, serif;
-            
+            margin-left: -15em;
+            width: 1100px;
             padding-left:28em;
             background-color: #307082;
             color: white;
@@ -262,6 +270,11 @@ body {
         }
         .footer li {
             font-size: 15px;
+        }
+
+        .form-control1 {
+            width: 180px;
+            font-size: 18px;
         }
     }
 
