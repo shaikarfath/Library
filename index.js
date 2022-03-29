@@ -8,18 +8,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 const port = process.env.PORT || 3000;
 
-
 app.get('/', function (request, response) {
     response.render('main', {booksdata : booksdata});
 });
-
 
 app.post('/', function(req,res){
     
     axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.body.keyword}`)
     .then(function(response){
  
-        
         booksdata = response.data;      
          console.log(booksdata);
                 
@@ -30,9 +27,6 @@ app.post('/', function(req,res){
         res.redirect('/');
     })
  });
-
-
-
 
 app.get('/authors', function (request, response) {
     response.render('authors');
