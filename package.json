@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/shaikarfath/Library/issues"
   },
-  "homepage": "https://github.com/shaikarfath/Library#readme"
+  "homepage": "https://github.com/shaikarfath/Library#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
