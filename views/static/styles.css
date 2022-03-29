@@ -153,6 +153,11 @@ body {
         margin-bottom: 1em;
     }
 
+    .modal-body {
+        height: 700px;
+        overflow: auto;
+    }
+
     @media only screen and (max-width: 700px) {
         .nav {
             min-height: 10px;
@@ -229,4 +234,7 @@ body {
             margin-left: -3.6em;
         }
     }
+
+
+
 </style>
