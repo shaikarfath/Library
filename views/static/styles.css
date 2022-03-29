@@ -236,6 +236,14 @@ body {
         
     }
 
+    @media screen and (max-width: 1180px) and (min-width: 641px) {
+        .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5{
+            font-size: 12px;
+            margin-left: 1.5em;
+        }
+
+    }
+
 
 
 </style>
