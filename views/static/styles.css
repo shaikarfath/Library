@@ -163,6 +163,10 @@ body {
         height: 700px;
         overflow: auto;
     }
+    .form_btn button{
+        background-color: blue;
+        font-size: 15px;
+    }
 
     @media only screen and (max-width: 640px) {
         .nav {
@@ -242,6 +246,23 @@ body {
             margin-left: 1.5em;
         }
 
+        .container2 {
+            font-family: 'Times New Roman', Times, serif;
+            
+            padding-left:28em;
+            background-color: #307082;
+            color: white;
+            font-size: 10px;
+            
+        }
+
+        .footer h5 {
+            font-size: 15px;
+            margin-top: -12px;
+        }
+        .footer li {
+            font-size: 15px;
+        }
     }
 
 
