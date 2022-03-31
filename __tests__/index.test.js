@@ -9,6 +9,8 @@ describe('Endpoints', () => {
         try {
             await request.get("/");
             expect(res.text.indexOf("Authors")).toBe(6599);
+            console.log(res.text.indexOf("Titles"));
+            console.log(res.text.indexOf("Popular Series"));
         } catch (err) {
         }
     });
