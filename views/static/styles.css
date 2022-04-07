@@ -2,7 +2,6 @@
     .data{
         font-family: 'Times New Roman', Times, serif;
     }
-
     .data h2{
         font-weight: bold;
     }
@@ -277,7 +276,4 @@ body {
             font-size: 18px;
         }
     }
-
-
-
 </style>
