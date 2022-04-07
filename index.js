@@ -17,7 +17,6 @@ app.post('/', function(req,res){
     axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.body.keyword}`)
     .then(function(response){
         booksdata = response.data;      
-         console.log(booksdata);
                 
          res.redirect('/');
     })
