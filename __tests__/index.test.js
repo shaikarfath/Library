@@ -96,40 +96,56 @@ describe('Endpoints', () => {
     });
 
 
+    //antiq page
+    it('test5', async () => {
+        try {
+            await request.get("/antiq");
+            expect(res.text.indexOf("Antiquarians")).toBe(569);
+            expect(res.text.indexOf("Antiquarian books!!!!!")).toBe(6952);
+            expect(res.text.indexOf("1900s and 1800s.")).toBe(7070);
+            expect(res.text.indexOf("Wuthering Heights")).toBe(7357);
+            expect(res.text.indexOf("The Wonderful Wizard of Oz")).toBe(7535);
+            expect(res.text.indexOf("Team")).toBe(8006);
+            expect(res.text.indexOf("Arfath Shaik")).toBe(8056);
+            expect(res.text.indexOf("Kiranmai Machiraju")).toBe(8114);
+            expect(res.text.indexOf("Contact Us")).toBe(8362);
+            expect(res.text.indexOf("Send")).toBe(9148);
+        } catch (err) {
+        }
+    });
+
+
 
 
 
 
     // for finding index of the strings - use this as a reference 
-// it('test 1', async done => {
-//         const request = supertest('http://localhost:3000');
-//         await request.get("/series")
-//         .expect(200)
-//         .end((err, res) => {
-//             if(err) {
-//                 throw err;
-//             } else {
-//                 //expect response to ,atch imported constnat
-//                 //console.log("Titles");
-//                 console.log(res.text.indexOf("Popular Series"));
-//                 console.log(res.text.indexOf("Most popular book series!!!!"));
-//                 console.log(res.text.indexOf("THESE VIOLENT DELIGHTS"));
-//                 console.log(res.text.indexOf("BY CHLOE GONG"));
-//                 console.log(res.text.indexOf("THE GILDED WOLVES"));
-//                 console.log(res.text.indexOf("BY ROSHANI CHOKSHI"));
-//                 console.log(res.text.indexOf("The David Wolf Mystery Thriller Series"));
-//                 console.log(res.text.indexOf("BY Jeff Carson"));
-//                 console.log(res.text.indexOf("Team"));
-//                 console.log(res.text.indexOf("Arfath Shaik"));
-//                 console.log(res.text.indexOf("Kiranmai Machiraju"));
-//                 console.log(res.text.indexOf("Contact Us"));
-//                 console.log(res.text.indexOf("Send"));
-//                 //expect(res.text.indexOf("Authors")).toBe(6599);
-//                 //expect(res.text).toEqual('none');
-//                 done();
-//             }
-//         });
-//     }, 60000)
+    // it('test 1', async done => {
+    //     const request = supertest('http://localhost:3000');
+    //     await request.get("/antiq")
+    //         .expect(200)
+    //         .end((err, res) => {
+    //             if (err) {
+    //                 throw err;
+    //             } else {
+    //                 //expect response to ,atch imported constnat
+    //                 //console.log("Titles");
+    //                 console.log(res.text.indexOf("Antiquarians"));
+    //                 console.log(res.text.indexOf("Antiquarian books!!!!!"));
+    //                 console.log(res.text.indexOf("1900s and 1800s."));
+    //                 console.log(res.text.indexOf("Wuthering Heights"));
+    //                 console.log(res.text.indexOf("The Wonderful Wizard of Oz"));
+    //                 console.log(res.text.indexOf("Team"));
+    //                 console.log(res.text.indexOf("Arfath Shaik"));
+    //                 console.log(res.text.indexOf("Kiranmai Machiraju"));
+    //                 console.log(res.text.indexOf("Contact Us"));
+    //                 console.log(res.text.indexOf("Send"));
+    //                 //expect(res.text.indexOf("Authors")).toBe(6599);
+    //                 //expect(res.text).toEqual('none');
+    //                 done();
+    //             }
+    //         });
+    // }, 60000)
 
 
 
