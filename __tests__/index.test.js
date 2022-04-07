@@ -74,6 +74,28 @@ describe('Endpoints', () => {
     });
 
 
+    //series page
+    it('test4', async () => {
+        try {
+            await request.get("/series");
+            expect(res.text.indexOf("Popular Series")).toBe(6656);
+            expect(res.text.indexOf("Most popular book series!!!!")).toBe(6943);
+            expect(res.text.indexOf("THESE VIOLENT DELIGHTS")).toBe(7706);
+            expect(res.text.indexOf("BY CHLOE GONG")).toBe(7750);
+            expect(res.text.indexOf("THE GILDED WOLVES")).toBe(8134);
+            expect(res.text.indexOf("BY ROSHANI CHOKSHI")).toBe(8172);
+            expect(res.text.indexOf("The David Wolf Mystery Thriller Series")).toBe(8611);
+            expect(res.text.indexOf("BY Jeff Carson")).toBe(8671);
+            expect(res.text.indexOf("Team")).toBe(9115);
+            expect(res.text.indexOf("Arfath Shaik")).toBe(9165);
+            expect(res.text.indexOf("Kiranmai Machiraju")).toBe(9223);
+            expect(res.text.indexOf("Contact Us")).toBe(9471);
+            expect(res.text.indexOf("Send")).toBe(10257);
+        } catch (err) {
+        }
+    });
+
+
 
 
 
@@ -81,7 +103,7 @@ describe('Endpoints', () => {
     // for finding index of the strings - use this as a reference 
 // it('test 1', async done => {
 //         const request = supertest('http://localhost:3000');
-//         await request.get("/titles")
+//         await request.get("/series")
 //         .expect(200)
 //         .end((err, res) => {
 //             if(err) {
@@ -89,20 +111,19 @@ describe('Endpoints', () => {
 //             } else {
 //                 //expect response to ,atch imported constnat
 //                 //console.log("Titles");
-//                 console.log(res.text.indexOf("Titles"));
-//                 console.log(res.text.indexOf("Titles of this Year!!!!"));
-//                 console.log(res.text.indexOf("career"));
-//                 console.log(res.text.indexOf("People We Meet on Vacation"));
-//                 console.log(res.text.indexOf("Malibu Rising"));
-//                 console.log(res.text.indexOf("The Four Winds"));
-//                 console.log(res.text.indexOf("The Last Thing He Told Me"));
-//                 console.log(res.text.indexOf("Project Hail Mary"));
-//                 console.log(res.text.indexOf("Klara and the Sun"));
-//                 console.log(res.text.indexOf("The Push"));
-//                 console.log(res.text.indexOf("Beautiful World, Where Are You"));
+//                 console.log(res.text.indexOf("Popular Series"));
+//                 console.log(res.text.indexOf("Most popular book series!!!!"));
+//                 console.log(res.text.indexOf("THESE VIOLENT DELIGHTS"));
+//                 console.log(res.text.indexOf("BY CHLOE GONG"));
+//                 console.log(res.text.indexOf("THE GILDED WOLVES"));
+//                 console.log(res.text.indexOf("BY ROSHANI CHOKSHI"));
+//                 console.log(res.text.indexOf("The David Wolf Mystery Thriller Series"));
+//                 console.log(res.text.indexOf("BY Jeff Carson"));
+//                 console.log(res.text.indexOf("Team"));
 //                 console.log(res.text.indexOf("Arfath Shaik"));
 //                 console.log(res.text.indexOf("Kiranmai Machiraju"));
 //                 console.log(res.text.indexOf("Contact Us"));
+//                 console.log(res.text.indexOf("Send"));
 //                 //expect(res.text.indexOf("Authors")).toBe(6599);
 //                 //expect(res.text).toEqual('none');
 //                 done();
@@ -110,7 +131,7 @@ describe('Endpoints', () => {
 //         });
 //     }, 60000)
 
-    
+
 
 })
 
