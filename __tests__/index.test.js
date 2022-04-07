@@ -51,10 +51,37 @@ describe('Endpoints', () => {
     });
 
 
+    //titles page
+    it('test3', async () => {
+        try {
+            await request.get("/titles");
+            expect(res.text.indexOf("Titles")).toBe(568);
+            expect(res.text.indexOf("Titles of this Year!!!!")).toBe(6976);
+            expect(res.text.indexOf("career")).toBe(7163);
+            expect(res.text.indexOf("People We Meet on Vacation")).toBe(7698);
+            expect(res.text.indexOf("Malibu Rising")).toBe(8172);
+            expect(res.text.indexOf("The Four Winds")).toBe(8642);
+            expect(res.text.indexOf("The Last Thing He Told Me")).toBe(9104);
+            expect(res.text.indexOf("Project Hail Mary")).toBe(9591);
+            expect(res.text.indexOf("Klara and the Sun")).toBe(10101);
+            expect(res.text.indexOf("The Push")).toBe(10585);
+            expect(res.text.indexOf("Beautiful World, Where Are You")).toBe(11059);
+            expect(res.text.indexOf("Arfath Shaik")).toBe(11579);
+            expect(res.text.indexOf("Kiranmai Machiraju")).toBe(11637);
+            expect(res.text.indexOf("Contact Us")).toBe(11885);
+        } catch (err) {
+        }
+    });
+
+
+
+
+
+
     // for finding index of the strings - use this as a reference 
 // it('test 1', async done => {
 //         const request = supertest('http://localhost:3000');
-//         await request.get("/authors")
+//         await request.get("/titles")
 //         .expect(200)
 //         .end((err, res) => {
 //             if(err) {
@@ -62,22 +89,19 @@ describe('Endpoints', () => {
 //             } else {
 //                 //expect response to ,atch imported constnat
 //                 //console.log("Titles");
-//                 console.log(res.text.indexOf("Authors"));
-//                 console.log(res.text.indexOf("Popular Authors"));
-//                 console.log(res.text.indexOf("COVID"));
-//                 console.log(res.text.indexOf("2021"));
-//                 console.log(res.text.indexOf("Anthony Doerr"));
-//                 console.log(res.text.indexOf("Richard Wright"));
-//                 console.log(res.text.indexOf("Honorée Fanonne Jeffers"));
-//                 console.log(res.text.indexOf("Maggie Nelson"));
-//                 console.log(res.text.indexOf("Maggie Shipstead"));
-//                 console.log(res.text.indexOf("James Lapine"));
-//                 console.log(res.text.indexOf("Nathan Harris"));
-//                 console.log(res.text.indexOf("Amor Towles"));
-//                 console.log(res.text.indexOf("Uwem Akpan"));
-//                 console.log(res.text.indexOf("Patricia Engel"));
-//                 console.log(res.text.indexOf("Jonathan Franzen"));
-//                 console.log(res.text.indexOf("Richard Powers"));
+//                 console.log(res.text.indexOf("Titles"));
+//                 console.log(res.text.indexOf("Titles of this Year!!!!"));
+//                 console.log(res.text.indexOf("career"));
+//                 console.log(res.text.indexOf("People We Meet on Vacation"));
+//                 console.log(res.text.indexOf("Malibu Rising"));
+//                 console.log(res.text.indexOf("The Four Winds"));
+//                 console.log(res.text.indexOf("The Last Thing He Told Me"));
+//                 console.log(res.text.indexOf("Project Hail Mary"));
+//                 console.log(res.text.indexOf("Klara and the Sun"));
+//                 console.log(res.text.indexOf("The Push"));
+//                 console.log(res.text.indexOf("Beautiful World, Where Are You"));
+//                 console.log(res.text.indexOf("Arfath Shaik"));
+//                 console.log(res.text.indexOf("Kiranmai Machiraju"));
 //                 console.log(res.text.indexOf("Contact Us"));
 //                 //expect(res.text.indexOf("Authors")).toBe(6599);
 //                 //expect(res.text).toEqual('none');
