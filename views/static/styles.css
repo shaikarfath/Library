@@ -1,5 +1,5 @@
 <style>
-    .data{
+    body {
         font-family: 'Times New Roman', Times, serif;
     }
     .data h2{
@@ -23,16 +23,16 @@
     }
 
     .title{
-        font-family: 'Times New Roman', Times, serif;
+        
         font-size: 30px;
         font-weight: bold;
     }
     .author{
-        font-family: 'Times New Roman', Times, serif;
+       
         font-size: 25px;
     }
     .des{
-        font-family: 'Times New Roman', Times, serif;
+        
         font-size: 20px;
         margin-left: 2em;
         margin-right: 2em;
@@ -44,7 +44,7 @@
 
     a {
         font-size: 2.5em;
-        font-family: 'Times New Roman', Times, serif;
+       
     }
 
     .nav-link {
@@ -75,9 +75,7 @@
         background-color: #307082;
     }
 
-    
     .content h1 {
-        font-family: 'Times New Roman', Times, serif;
         
         text-align: center;
         color: black;
@@ -85,8 +83,7 @@
     }
 
     .content p {
-        font-family: 'Times New Roman', Times, serif;
-       
+        
         text-align: center;
         color: black;
         font-size: 20px;
@@ -216,16 +213,16 @@ body {
             font-weight: bold;
         }
         .title{
-            font-family: 'Times New Roman', Times, serif;
+            
             font-size: 20px;
             font-weight: bold;
         }
         .author{
-            font-family: 'Times New Roman', Times, serif;
+            
             font-size: 15px;
         }
         .des{
-            font-family: 'Times New Roman', Times, serif;
+            
             font-size: 15px;
         }
         .image img{
@@ -253,7 +250,7 @@ body {
         }
 
         .container2 {
-            font-family: 'Times New Roman', Times, serif;
+            
             margin-left: -15em;
             width: 1100px;
             padding-left:28em;
