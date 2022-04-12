@@ -10,6 +10,7 @@ exports.config = {
     }
     },
     // Framework to use. Jasmine is recommended.
+    useAllAngular2AppRoots: true,
     framework: 'jasmine',
    // seleniumAddress: 'http://localhost:4444/wd/hub',
     // Spec patterns are relative to the current working directory when protractor is called.
