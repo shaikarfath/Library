@@ -7,7 +7,7 @@ describe('Spec | Test Login', function () {
 
     it('should find correct title', function () {
         browser.driver.sleep(5000)
-        expect(browser.driver.getTitle()).toEqual('Open Library trash');
+        expect(browser.driver.getTitle()).toEqual('Open Library');
     });
 
     it('should find correct title', function () {
