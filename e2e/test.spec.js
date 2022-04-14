@@ -1,8 +1,20 @@
+const { browser } = require("protractor");
+
+
 describe('Spec | Test Login', function () {
-    browser.driver.get('localhost:3000');
+    browser.waitForAngularEnabled(false);
+    browser.driver.get('http://localhost:3000');
 
     it('should find correct title', function () {
-        expect(browser.driver.getTitle()).toEqual('Open Library');
+        browser.driver.sleep(5000)
+        expect(browser.driver.getTitle()).toEqual('Open Library trash');
+    });
+
+    it('should find correct title', function () {
+        browser.driver.sleep(5000)
+        element(by.partialLinkText('Author')).click();
+        browser.driver.sleep(5000)
+        expect(browser.driver.getTitle()).toEqual('Open Library - Authors');
     });
    
 });
