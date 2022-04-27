@@ -119,35 +119,6 @@ describe('Endpoints', () => {
 
 
 
-    // for finding index of the strings - use this as a reference 
-    // it('test 1', async done => {
-    //     const request = supertest('http://localhost:3000');
-    //     await request.get("/antiq")
-    //         .expect(200)
-    //         .end((err, res) => {
-    //             if (err) {
-    //                 throw err;
-    //             } else {
-    //                 //expect response to ,atch imported constnat
-    //                 //console.log("Titles");
-    //                 console.log(res.text.indexOf("Antiquarians"));
-    //                 console.log(res.text.indexOf("Antiquarian books!!!!!"));
-    //                 console.log(res.text.indexOf("1900s and 1800s."));
-    //                 console.log(res.text.indexOf("Wuthering Heights"));
-    //                 console.log(res.text.indexOf("The Wonderful Wizard of Oz"));
-    //                 console.log(res.text.indexOf("Team"));
-    //                 console.log(res.text.indexOf("Arfath Shaik"));
-    //                 console.log(res.text.indexOf("Kiranmai Machiraju"));
-    //                 console.log(res.text.indexOf("Contact Us"));
-    //                 console.log(res.text.indexOf("Send"));
-    //                 //expect(res.text.indexOf("Authors")).toBe(6599);
-    //                 //expect(res.text).toEqual('none');
-    //                 done();
-    //             }
-    //         });
-    // }, 60000)
-
-
-
+    
 })
 
