@@ -53,7 +53,6 @@ describe('Spec | Test Login', function () {
         browser.executeScript("document.getElementById('keyword').value='wuthering'");
         element(by.css('.btn-success')).click()
         browser.driver.sleep(10000)
-        //element(by.buttonText('Save'));
         const modal = element(by.buttonText('Book Description'));
         browser.executeScript('arguments[0].click();', modal);
         browser.driver.sleep(3000)
