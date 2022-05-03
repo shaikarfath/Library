@@ -40,17 +40,15 @@ For the testing part, we are using two different types of testing for the front-
 
 For the front-end testing, we are using `Protractor`
 
+Note: Since Git Version Control doesn't support Protractor, the testing needs to be done manually on your system
+
 >>>How to Install
 
 ### For WINDOWS
 
 - The basic step is to go to the repository and download the Zip file
-    - The downloaded file will be saved under downloades on your pc
+    - The downloaded file will be saved under downloads on your pc
     - Unzip/ extract the file 
-    - On a command prompt, the project needs to be pulled up and the commands will be as follows 
-        - `cd downloads`
-        - `cd Library-test`
-        - `cd Library-test`
     - And since the packages are not installed to run the program, the next steps will be to install the necessary packages
 - First step is to install Node JS on Windows
     - On a browser, navigate to https://nodejs.org/en/download/ and download the desired version for your Windows
@@ -59,6 +57,15 @@ For the front-end testing, we are using `Protractor`
     - On a new command prompt, install express by using the following command `npm install express`
 - Third step is to install Axios package for the project
     - On a new command prompt, install axios by using the following command `npm install axios`
+- Run the program on command prompt using the following commands 
+    - On a command prompt, the project needs to be pulled up and the commands will be as follows 
+     `cd downloads`
+     `cd Library-test`
+     `cd Library-test`
+
+Note: If when the downloaded and extracted file doesn't have a "library-test" file in the actual file, then only use one `cd Library-test` command to run the program command
+
+- Once you are in the Library-test directory, use the command `node index.js` to run the program and it will give you a message saying the "App is running on Port 3000!". Leave the command prompt running in the background
 
 - Installing Protractor
     - On a new command prompt, and type `npm install –g protractor` to install it globally
