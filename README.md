@@ -44,15 +44,25 @@ For the front-end testing, we are using `Protractor`
 
 ### For WINDOWS
 
-- First step is to install Node JS on Windows.
+- The basic step is to go to the repository and download the Zip file
+    - The downloaded file will be saved under downloades on your pc
+    - Unzip/ extract the file 
+    - On a command prompt, the project needs to be pulled up and the commands will be as follows 
+        - `cd downloads`
+        - `cd Library-test`
+        - `cd Library-test`
+    - And since the packages are not installed to run the program, the next steps will be to install the necessary packages
+- First step is to install Node JS on Windows
     - On a browser, navigate to https://nodejs.org/en/download/ and download the desired version for your Windows
     - Verify the installation by opening a command prompt on windows and type the following command `node -v`
-- Second step is to install Express package for the project to run.
+- Second step is to install Express package for the project to run
     - On a new command prompt, install express by using the following command `npm install express`
-- Third step is to install Axios package for the project.
+- Third step is to install Axios package for the project
     - On a new command prompt, install axios by using the following command `npm install axios`
 
 - Installing Protractor
     - On a new command prompt, and type `npm install –g protractor` to install it globally
     - Once it's installed, then on the same command prompt, type `webdriver-manager update`
     - And the next command is `webdriver-manager start` to start web driver 
+    
+    Note: Once the web driver is started, if it doesn't run on port 4444, then there is something wrong in the setup. Quit following the next steps and reinstall protractor again.
