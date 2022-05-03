@@ -51,3 +51,8 @@ For the front-end testing, we are using `Protractor`
     - On a new command prompt, install express by using the following command `npm install express`
 - Third step is to install Axios package for the project.
     - On a new command prompt, install axios by using the following command `npm install axios`
+
+- Installing Protractor
+    - On a new command prompt, and type `npm install –g protractor` to install it globally
+    - Once it's installed, then on the same command prompt, type `webdriver-manager update`
+    - And the next command is `webdriver-manager start` to start web driver 
