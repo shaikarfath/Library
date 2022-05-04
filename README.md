@@ -16,6 +16,11 @@ Once you are on the GitPod, there will be a terminal that is opened in the botto
   
     npm install express
     
+Note: If there is an error showing up, then navigate to the "package.json" file and remove the following depenency from the file
+
+    "node-bin-darwin-arm64": "^17.7.1",
+
+    
 Note: If there is an error saying "axios" is not found, install "axios" using the following command 
 
     npm install axios
@@ -24,11 +29,7 @@ Once everything is installed sucessfully, it is now time to run the application 
 
     node index.js
     
-Note: If there is an error showing up, then navigate to the "package.json" file and remove the following depenency from the file
-
-    "node-bin-darwin-arm64": "^17.7.1",
-
-There will be a pop up box saying The website runs on port, and on that, click on "open in new browser"    
+There will be a pop up box saying The website runs on port 3000, and on that, click on "open in new browser"    
 
 Now, stop the program using the command, `ctr+c` on terminal.
 
@@ -40,7 +41,7 @@ For the testing part, we are using two different types of testing for the front-
 
 For the front-end testing, we are using `Protractor`
 
-Note: Since Git Version Control doesn't support Protractor, the testing needs to be done manually on your system
+Note: Since Git Version Control doesn't support Protractor, the testing needs to be done manually on your system. Make sure your sysytem have Chrome and Java installed on it and are up-to-date.
 
 >>>How to Install
 
@@ -54,11 +55,11 @@ Note: Since Git Version Control doesn't support Protractor, the testing needs to
     - On a browser, navigate to https://nodejs.org/en/download/ and download the desired version for your Windows
     - Verify the installation by opening a command prompt on windows and type the following command `node -v`
 - Second step is to install Express package for the project to run
-    - On a new command prompt, install express by using the following command `npm install express`
+    - On the same command prompt, install express by using the following command `npm install express`
 - Third step is to install Axios package for the project
-    - On a new command prompt, install axios by using the following command `npm install axios`
+    - On the same command prompt, install axios by using the following command `npm install axios`
 - Run the program on command prompt using the following commands 
-    - On a command prompt, the project needs to be pulled up and the commands will be as follows 
+    - On the samecommand prompt, the project needs to be pulled up and the commands will be as follows 
      `cd downloads`
      `cd Library-test`
      `cd Library-test`
@@ -86,20 +87,23 @@ On a new command prompt, navigate to the directory Library-test using the same c
 Then there will be a pop-up that asks you to set/ pick a browser of your choice to run the tests (Chrome is best browser) and the tests will be running on the browser and after all the entered tests are performed, the command prompt will give you a message that mentions all the passed tests and the total tests along with the failed tests. 
 
 ### FOR MAC
+Note: For Mac M1 please navigate to the "package.json" file and add the following depenency from the file. Remeber this arm64 version should match with your node version.
 
+    "node-bin-darwin-arm64": "^17.7.1",
+    
 - The basic step is to go to the repository and download the Zip file
     - The downloaded file will be saved under downloads on your pc
     - Unzip/ extract the file 
     - And since the packages are not installed to run the program, the next steps will be to install the necessary packages
 - First step is to install Node JS on Windows
     - On a browser, navigate to https://nodejs.org/en/download/ and download the desired version for your Windows
-    - Verify the installation by opening a command prompt on windows and type the following command `node -v`
+    - Verify the installation by opening a terminal and type the following command `node -v`
 - Second step is to install Express package for the project to run
-    - On a new command prompt, install express by using the following command `npm install express`
+    - On the same terminal, install express by using the following command `npm install express`
 - Third step is to install Axios package for the project
-    - On a new command prompt, install axios by using the following command `npm install axios`
+    - On the same terminal, install axios by using the following command `npm install axios`
 - Run the program on command prompt using the following commands 
-    - On a command prompt, the project needs to be pulled up and the commands will be as follows 
+    - On the same command prompt, the project needs to be pulled up and the commands will be as follows 
      `cd downloads`
      `cd Library-test`
      `cd Library-test`
@@ -109,7 +113,7 @@ Note: If when the downloaded and extracted file doesn't have a "library-test" fi
 - Once you are in the Library-test directory, use the command `node index.js` to run the program and it will give you a message saying the "App is running on Port 3000!". Leave the command prompt running in the background
 
 - Installing Protractor
-    - On a new command prompt, and type `npm install –g protractor` to install it globally
+    - On a new terminal, and type `npm install –g protractor` to install it globally
     - Once it's installed, then on the same command prompt, type `webdriver-manager update`
     - And the next command is `webdriver-manager start` to start web driver 
     
@@ -117,22 +121,24 @@ Note: If when the downloaded and extracted file doesn't have a "library-test" fi
 
 >>How to Run Tests
 
-On a new command prompt, navigate to the directory Library-test using the same commands 
+On a new terminal, navigate to the directory Library-test using the same commands 
 
     - cd downloads
     - cd Library-test
     - cd Library-test
     - protractor protractor.conf.js
 
-Then there will be a pop-up that asks you to set/ pick a browser of your choice to run the tests (Chrome is best browser) and the tests will be running on the browser and after all the entered tests are performed, the command prompt will give you a message that mentions all the passed tests and the total tests along with the failed tests. 
+Then the selected browser pops up with the website and the tests are run one by one. Once the tests are done, terminal receives a message with how many specs passed or failed and total specs. 
+
+Note: You can select the browser in the protractor.conf.js file.
 
 >>Back-end Testing
 
-For back-end testing, we are using ZestJS. Unlike protractor, Git Version control supports Zest.
+For back-end testing, we are using JestJS. Unlike protractor, Git Version control supports Jest. So you can go to the gitpod and run the following steps.
 
 >>>How to run tests
 
- On a terminal, type the following command to run zest test cases
+ On a terminal in the gitpod, type the following command to run jest test cases
  
         npm run test
         
