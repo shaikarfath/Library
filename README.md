@@ -117,6 +117,8 @@ Note: If when the downloaded and extracted file doesn't have a "library-test" fi
     - Once it's installed, then on the same command prompt, type `webdriver-manager update`
     - And the next command is `webdriver-manager start` to start web driver 
     
+    Note : On Mac, You should sometimes do installations in the sudo mode, so use  `sudo npm install –g protractor` istead. Also, if it pops an error and says to install webdriver standalnoe, then use `sudo install webdriver-manager --standalone` and then ` sudo webdriver-manager update` followed by `webdriver-manager start`.
+    
     Note: Once the web driver is started, if it doesn't run on port 4444, then there is something wrong in the setup. Quit following the next steps and reinstall protractor again.
 
 >>How to Run Tests
