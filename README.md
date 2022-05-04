@@ -125,3 +125,15 @@ On a new command prompt, navigate to the directory Library-test using the same c
     - protractor protractor.conf.js
 
 Then there will be a pop-up that asks you to set/ pick a browser of your choice to run the tests (Chrome is best browser) and the tests will be running on the browser and after all the entered tests are performed, the command prompt will give you a message that mentions all the passed tests and the total tests along with the failed tests. 
+
+>>Back-end Testing
+
+For back-end testing, we are using ZestJS. Unlike protractor, Git Version control supports Zest.
+
+>>>How to run tests
+
+ On a terminal, type the following command to run zest test cases
+ 
+        npm run test
+        
+The command helps run the tests in the background, and the terminal will give you a message saying how many tests passed, failed and the total number of tests included. 
